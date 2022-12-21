@@ -1,0 +1,59 @@
+$rasberry: rgb(142, 9, 40);
+$brightPink:rgb(204, 20, 42);
+$pink: rgb(242, 157, 173);
+$lightPink:rgb(252, 205, 213);
+$white: rgb(247, 245, 248);
+$gray: rgb(226, 227, 228);
+
+
+.card {
+width: 25vw;
+    background-color: $lightPink;
+    border-radius: 3%;
+    margin: 30px auto ;
+}
+
+.card-container{
+    margin: 10px 0;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.wordInEnglish{
+    font-weight: 800;
+    font-size: larger;
+}
+
+.wordInRussian{
+    font-weight: 600;
+    font-size: large;
+}
+
+.tag{
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 0 auto;
+    width: 31%;
+    border-radius: 3%;
+    background-color:$pink ;
+    border:2px solid $white;
+}
+
+.card-button{
+    box-sizing: border-box;
+    padding: 8px 12px;
+    margin: 15px auto;
+    background-color: $brightPink;
+    border: 2px solid $pink;
+    border-radius: 3%;
+    font-weight: 400;
+    font-size: large;
+    color: $white;
+}
+
+.card-button:hover{
+    background-color: $rasberry;
+}

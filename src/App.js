@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Card from './assets/components/card';
+import Footer from './assets/components/footer';
+import Header from './assets/components/header';
+import { listOfWords } from './assets/data/wordsData';
+
+ 
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+     <Header ></Header>
+     <section className="section-cards">
+     {listOfWords.map((listOfWords) => 
+     <Card english={listOfWords.english} transcription = {listOfWords.transcription} russian= {listOfWords.russian} tags ={listOfWords.tags}></Card> )}
+      </section>
+     <Footer className="App"></Footer>
     </div>
+ 
   );
 }
 
 export default App;
+
