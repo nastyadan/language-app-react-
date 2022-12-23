@@ -1,15 +1,15 @@
 import React from 'react';
-import '../styles/header.scss';
+import headerStyle from '../styles/header.module.scss';
 
 
 class Header extends React.Component {
     render() {
         return (
-            <div className='header'>
-                <nav >
-                    <button className='buttonInNav'>Все слова</button>
-                    <button className='buttonInNav'>Мой словарь</button>
-                    <button className='buttonInNav'>Начать тренеровку</button>
+            <div className={headerStyle.header}>
+                <nav className={headerStyle.nav}>
+                    <button className={headerStyle.buttonInNav}>Все слова</button>
+                    <button className={headerStyle.buttonInNav}>Мой словарь</button>
+                    <button className={headerStyle.buttonInNav}>Начать тренировку</button>
                 </nav>
             </div>
         )

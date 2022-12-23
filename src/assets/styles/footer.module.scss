@@ -7,14 +7,17 @@ $gray: rgb(226, 227, 228);
 
 .footer{
   background-color: $pink;
+  display: flex;
+flex-wrap: wrap;
+text-align: center;
  
 }
 
 .buttonInNav{
+    width: 350px;
+    margin: 15px 10px;
     box-sizing: border-box;
-    width: 30%;
     padding: 8px 12px;
-    margin: 15px auto;
     background-color: $brightPink;
     border: 2px solid $white;
     border-radius: 3%;
@@ -22,12 +25,11 @@ $gray: rgb(226, 227, 228);
     font-size: large;
     color: $white;
 }
-.nav{
-    margin: 10px auto;
 
-    display: flex;
-    justify-content: space-between;  
-}
 .buttonInNav:hover{
     background-color: $rasberry;
+}
+
+.nav{
+    margin: 30px auto;
 }
