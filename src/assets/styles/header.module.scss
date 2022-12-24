@@ -1,34 +1,10 @@
-$rasberry: rgb(142, 9, 40);
-$brightPink:rgb(204, 20, 42);
-$pink: rgb(242, 157, 173);
-$lightPink:rgb(252, 205, 213);
-$white: rgb(247, 245, 248);
-$gray: rgb(226, 227, 228);
+
+@import './variables.scss';
+@import './nav.scss';
 
 .header{
 background-color: $pink;
 display: flex;
 flex-wrap: wrap;
 text-align: center;
-}
-
-.buttonInNav{
-    width: 350px;
-    margin: 15px 10px;
-    box-sizing: border-box;
-    padding: 8px 12px;
-    background-color: $brightPink;
-    border: 2px solid $white;
-    border-radius: 3%;
-    font-weight: 400;
-    font-size: large;
-    color: $white;
-}
-
-.buttonInNav:hover{
-    background-color: $rasberry;
-}
-
-.nav{
-    margin: 30px auto;
 }

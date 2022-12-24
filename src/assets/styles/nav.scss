@@ -1,0 +1,20 @@
+.nav{
+    margin: 30px auto;
+    .buttonInNav{
+        width: 350px;
+        margin: 15px 10px;
+        box-sizing: border-box;
+        padding: 8px 12px;
+        background-color: $brightPink;
+        border: 2px solid $white;
+        border-radius: 3%;
+        font-weight: 400;
+        font-size: large;
+        color: $white;
+    
+    
+ &:hover{
+        background-color: $rasberry;
+    }
+}
+}
