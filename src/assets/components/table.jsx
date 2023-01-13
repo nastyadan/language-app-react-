@@ -13,6 +13,7 @@ class Table extends React.Component {
     render() {
 
         return (
+
             <table className={tableStyle.table}>
                 <thead>
                     <tr>
@@ -29,7 +30,7 @@ class Table extends React.Component {
                             <td className={tableStyle.tdWords}>{item.transcription}</td>
                             <td className={tableStyle.tdWords}>{item.russian}</td>
                             <td className={tableStyle.tdWords}>
-                                <button className={tableStyle.tableButton} >Редактировать</button>
+                                <button className={tableStyle.tableButton}> Редактировать</button>
                             </td>
                         </tr>;
                     })}
